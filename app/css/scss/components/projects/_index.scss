@@ -1,6 +1,10 @@
 @use "../globals/variables" as v;
 @use "../globals/breakpoints" as bp;
 
+.projects .section-title {
+  text-transform: uppercase;
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -16,6 +20,9 @@
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+  border: 1px solid v.$color-border;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .project-card__title {
@@ -36,7 +43,9 @@
 
 .project-card__square {
   display: block;
+  box-sizing: border-box;
   aspect-ratio: 1 / 1;
+  padding: 24px;
   overflow: hidden;
   background-color: v.$color-surface;
 }
@@ -53,7 +62,7 @@
   object-fit: contain;
 }
 
-@include bp.breakpoint(mobile) {
+@include bp.breakpoint(small) {
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
   }

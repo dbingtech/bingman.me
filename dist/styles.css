@@ -9,7 +9,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Crimson Text", serif;
+  font-family: "Jost", sans-serif;
+}
+
+main {
+  padding-inline: 1.5rem;
 }
 
 .site-header {
@@ -159,6 +163,10 @@ h6 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.projects .section-title {
+  text-transform: uppercase;
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -174,6 +182,9 @@ h6 {
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .project-card__title {
@@ -191,7 +202,9 @@ h6 {
 
 .project-card__square {
   display: block;
+  box-sizing: border-box;
   aspect-ratio: 1/1;
+  padding: 24px;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -208,7 +221,7 @@ h6 {
   object-fit: contain;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 575px) {
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -216,7 +229,7 @@ h6 {
 .project-detail {
   max-width: 1440px;
   margin-inline: auto;
-  padding: 1.5rem;
+  padding-block: 1.5rem;
 }
 
 .project-detail__embed {
