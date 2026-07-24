@@ -36,6 +36,10 @@ h6 {
   line-height: 1.5;
   color: #282b28;
 }
+.site-header__title a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .site-header__actions {
   display: flex;
@@ -132,4 +136,95 @@ h6 {
 .back-to-top:hover, .back-to-top:focus-visible {
   background-color: #f0cf65;
   color: #282b28;
+}
+
+.webdev__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.webdev-card {
+  min-width: 0;
+}
+
+.webdev-card__embed {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 375px) {
+  .webdev__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.project-card__title {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+.project-card__title a {
+  color: #6a3937;
+  text-decoration: none;
+}
+.project-card__title a:hover, .project-card__title a:focus-visible {
+  text-decoration: underline;
+}
+
+.project-card__square {
+  display: block;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.project-card__status {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.project-card__logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 375px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.project-detail {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+
+.project-detail__embed {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-detail__logo {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }

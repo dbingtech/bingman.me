@@ -1,0 +1,23 @@
+@use "../globals/breakpoints" as bp;
+
+.webdev__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.webdev-card {
+  min-width: 0;
+}
+
+.webdev-card__embed {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+@include bp.breakpoint(mobile) {
+  .webdev__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
