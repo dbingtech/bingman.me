@@ -162,11 +162,14 @@ h6 {
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   gap: 1.5rem;
 }
 
 .project-card {
   min-width: 0;
+  width: 100%;
+  max-width: 290px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
