@@ -12,6 +12,10 @@ h6 {
   font-family: "Jost", sans-serif;
 }
 
+.section-title {
+  text-transform: uppercase;
+}
+
 main {
   padding-inline: 1.5rem;
 }
@@ -163,10 +167,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.projects .section-title {
-  text-transform: uppercase;
-}
-
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;

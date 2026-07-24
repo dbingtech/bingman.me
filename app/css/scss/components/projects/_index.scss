@@ -1,10 +1,6 @@
 @use "../globals/variables" as v;
 @use "../globals/breakpoints" as bp;
 
-.projects .section-title {
-  text-transform: uppercase;
-}
-
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;
