@@ -9,3 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTop = document.getElementById("back-to-top");
+  const projects = document.getElementById("projects");
+
+  if (!backToTop || !projects) return;
+
+  const updateVisibility = () => {
+    const isPastHero = projects.getBoundingClientRect().top <= 0;
+    backToTop.classList.toggle("is-visible", isPastHero);
+  };
+
+  updateVisibility();
+  document.addEventListener("scroll", updateVisibility, { passive: true });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
