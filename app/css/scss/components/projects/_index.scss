@@ -19,6 +19,10 @@
   border: 1px solid v.$color-border;
   border-radius: 12px;
   overflow: hidden;
+
+  &:hover {
+    border-color: v.$color-border-hover;
+  }
 }
 
 .project-card__title {

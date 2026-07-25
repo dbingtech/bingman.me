@@ -186,6 +186,9 @@ main {
   border-radius: 12px;
   overflow: hidden;
 }
+.project-card:hover {
+  border-color: #333333;
+}
 
 .project-card__title {
   margin: 0;
@@ -230,6 +233,11 @@ main {
   max-width: 1440px;
   margin-inline: auto;
   padding-block: 1.5rem;
+}
+
+.project-detail__intro {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
 }
 
 .project-detail__embed {

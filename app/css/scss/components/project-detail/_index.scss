@@ -1,7 +1,14 @@
+@use "../globals/variables" as v;
+
 .project-detail {
   max-width: 1440px;
   margin-inline: auto;
   padding-block: 1.5rem;
+}
+
+.project-detail__intro {
+  font-family: v.$font-body;
+  font-size: 1em;
 }
 
 .project-detail__embed {
