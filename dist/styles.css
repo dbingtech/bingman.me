@@ -17,6 +17,8 @@ h6 {
 }
 
 main {
+  max-width: 1336px;
+  margin-inline: auto;
   padding-inline: 1.5rem;
 }
 
@@ -27,7 +29,7 @@ main {
 }
 
 .site-header__inner {
-  max-width: 1440px;
+  max-width: 1336px;
   margin-inline: auto;
   padding: 0.5rem 1.5rem;
   display: flex;
@@ -112,8 +114,29 @@ main {
 }
 .hero__image {
   display: block;
-  width: 100%;
+  box-sizing: border-box;
+  width: 100vw;
   height: auto;
+  margin-inline: calc(50% - 50vw);
+  padding: 24px;
+}
+
+@media (max-width: 575px) {
+  .hero__image {
+    padding: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .hero__image {
+    width: 50%;
+    margin-inline: auto;
+    padding: 0;
+  }
+}
+.hero__title,
+.hero__summary {
+  max-width: 1336px;
+  margin-inline: auto;
 }
 
 .back-to-top {
@@ -146,6 +169,11 @@ main {
   color: #282b28;
 }
 
+.webdev {
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
 .webdev__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -167,6 +195,11 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.projects {
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -226,7 +259,7 @@ main {
 
 @media (min-width: 575px) {
   .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .project-detail {
@@ -251,4 +284,64 @@ main {
   width: 100%;
   max-width: 200px;
   height: auto;
+}
+
+.project-detail__meta {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.project-detail__meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-detail__meta-label {
+  min-width: 5.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6a3937;
+}
+
+.project-detail__meta-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-detail__pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: #b1e5f2;
+  color: #282b28;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.project-detail__summary {
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  padding-block: 1.5rem;
+  background-color: #fdeeea;
+  box-shadow: 0 0 0 100vmax #fdeeea;
+  clip-path: inset(0 -100vmax);
+}
+.project-detail__summary > :first-child {
+  margin-top: 0;
+}
+.project-detail__summary > :last-child {
+  margin-bottom: 0;
+}
+
+.resume {
+  max-width: 1336px;
+  margin-inline: auto;
 }

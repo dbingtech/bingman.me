@@ -23,3 +23,62 @@
   max-width: 200px;
   height: auto;
 }
+
+.project-detail__meta {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.project-detail__meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-detail__meta-label {
+  min-width: 5.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: v.$color-primary;
+}
+
+.project-detail__meta-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-detail__pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: v.$color-secondary;
+  color: v.$color-text;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.project-detail__summary {
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  padding-block: 1.5rem;
+  background-color: v.$color-surface-alt;
+  // Extend the background past the container to the viewport edges without
+  // 100vw (which would add horizontal scroll when a scrollbar is present).
+  box-shadow: 0 0 0 100vmax v.$color-surface-alt;
+  clip-path: inset(0 -100vmax);
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

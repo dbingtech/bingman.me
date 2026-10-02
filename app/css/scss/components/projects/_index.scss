@@ -1,6 +1,11 @@
 @use "../globals/variables" as v;
 @use "../globals/breakpoints" as bp;
 
+.projects {
+  max-width: 1336px;
+  margin-inline: auto;
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -64,6 +69,6 @@
 
 @include bp.breakpoint(small) {
   .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
