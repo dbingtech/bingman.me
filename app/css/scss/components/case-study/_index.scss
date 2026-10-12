@@ -1,0 +1,348 @@
+@use "../globals/variables" as v;
+@use "../globals/breakpoints" as bp;
+
+.case {
+  padding-block: 48px 64px;
+
+  @include bp.breakpoint(tablet) {
+    padding-block: 72px;
+  }
+
+  :where(p) {
+    margin: 0;
+  }
+}
+
+.case__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.case__eyebrow {
+  font-family: v.$font-mono;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: v.$color-link;
+}
+
+.case__title {
+  max-width: 760px;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+
+  @include bp.breakpoint(tablet) {
+    font-size: 44px;
+  }
+}
+
+%case-label {
+  font-family: v.$font-mono;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: v.$color-muted;
+}
+
+%case-card {
+  border: 1px solid v.$color-line;
+  border-radius: 10px;
+  background-color: v.$color-surface;
+}
+
+// Role / company / platform / timeline strip
+.case-meta {
+  @extend %case-card;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 0 32px;
+  overflow: hidden;
+}
+
+.case-meta__item {
+  // Negative margins hide the outer edges of the 1px dividers.
+  margin: 0 -1px -1px 0;
+  padding: 16px;
+  border-right: 1px solid v.$color-line;
+  border-bottom: 1px solid v.$color-line;
+
+  dt {
+    @extend %case-label;
+    margin-bottom: 4px;
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+// Problem / what I did / result
+.case-summary {
+  @extend %case-card;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px 32px;
+  margin-bottom: 48px;
+  padding: 24px;
+
+  @include bp.breakpoint(tablet) {
+    margin-bottom: 64px;
+  }
+}
+
+.case-summary__label {
+  @extend %case-label;
+  margin: 0 0 8px;
+}
+
+.case-summary__item--result {
+  .case-summary__label {
+    color: v.$color-link;
+  }
+
+  p {
+    font-weight: 600;
+  }
+}
+
+// Sticky table of contents beside the body on wide screens
+.case__layout {
+  display: grid;
+  gap: 32px;
+
+  @include bp.breakpoint(desktop) {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 64px;
+  }
+}
+
+.case-toc {
+  @include bp.breakpoint(desktop) {
+    position: sticky;
+    top: 24px;
+    align-self: start;
+  }
+}
+
+.case-toc__title {
+  @extend %case-label;
+  margin-bottom: 12px;
+}
+
+.case-toc__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include bp.breakpoint(desktop) {
+    flex-direction: column;
+  }
+
+  .home & a {
+    display: inline-block;
+    padding: 6px 0;
+    color: v.$color-ink;
+    font-size: 15px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      color: v.$color-link;
+    }
+  }
+}
+
+.case__body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.case-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  scroll-margin-top: 24px;
+  color: v.$color-ink-soft;
+}
+
+.case-section__title {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: v.$color-ink;
+}
+
+.case-quote {
+  margin: 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid v.$color-link;
+
+  p {
+    font-size: 20px;
+    color: v.$color-ink;
+  }
+
+  footer {
+    margin-top: 8px;
+    font-size: 15px;
+    color: v.$color-muted;
+  }
+}
+
+.case-findings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    @extend %case-card;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    color: v.$color-ink;
+  }
+}
+
+.case-findings__number {
+  flex-shrink: 0;
+  padding-top: 3px;
+  font-family: v.$font-mono;
+  font-size: 13px;
+  font-weight: 500;
+  color: v.$color-link;
+}
+
+.case-decision {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.case-decision__title {
+  margin: 0;
+  font-size: 20px;
+  color: v.$color-ink;
+}
+
+.case-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.case-compare__item {
+  margin: 0;
+
+  figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: v.$color-muted;
+  }
+}
+
+.case-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border: 1px dashed v.$color-footer-muted;
+  border-radius: 6px;
+  background-color: v.$color-tint;
+  font-family: v.$font-mono;
+  font-size: 13px;
+  color: v.$color-muted;
+}
+
+.case-options {
+  @extend %case-card;
+  padding: 16px 20px;
+  color: v.$color-ink;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+.case-options__title {
+  @extend %case-label;
+  margin-bottom: 12px;
+}
+
+.case-options__chosen {
+  font-weight: 600;
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case-metric {
+  @extend %case-card;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 16px;
+}
+
+.case-metric__value {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: v.$color-link;
+}
+
+.case-metric__label {
+  font-size: 14px;
+  color: v.$color-muted;
+}
+
+.case-pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 32px;
+  border-top: 1px solid v.$color-line;
+  font-weight: 600;
+
+  a {
+    padding-block: 8px;
+    text-decoration: none;
+  }
+
+  .home & .case-pager__back {
+    color: v.$color-ink;
+
+    &:hover {
+      color: v.$color-link;
+    }
+  }
+}

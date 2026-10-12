@@ -1,0 +1,28 @@
+@use "../globals/variables" as v;
+
+.about {
+  background-color: v.$color-surface;
+  border-top: 1px solid v.$color-line;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-block: 72px;
+
+  > * {
+    max-width: 680px;
+  }
+}
+
+.about__title {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: -0.01em;
+}
+
+.about__text {
+  margin: 0;
+  color: v.$color-ink-soft;
+}

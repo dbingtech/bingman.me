@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const backToTop = document.getElementById("back-to-top");
-  const projects = document.getElementById("projects");
+  const work = document.getElementById("work");
 
-  if (!backToTop || !projects) return;
+  if (!backToTop || !work) return;
 
   const updateVisibility = () => {
-    const isPastHero = projects.getBoundingClientRect().top <= 0;
+    const isPastHero = work.getBoundingClientRect().top <= 0;
     backToTop.classList.toggle("is-visible", isPastHero);
   };
 

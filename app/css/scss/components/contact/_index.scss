@@ -1,0 +1,49 @@
+@use "../globals/variables" as v;
+
+.contact {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+}
+
+.contact__intro {
+  font-size: 1.125em;
+}
+
+.contact__list {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  padding: 1rem 1.25rem;
+  background-color: v.$color-surface-alt;
+  border: 1px solid v.$color-border;
+  border-radius: 8px;
+}
+
+.contact__label {
+  min-width: 5.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: v.$color-primary;
+}
+
+.contact__link {
+  color: v.$color-primary;
+  overflow-wrap: anywhere;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: none;
+  }
+}

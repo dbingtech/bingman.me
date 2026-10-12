@@ -345,4 +345,50 @@ main {
 .resume {
   max-width: 1336px;
   margin-inline: auto;
+}
+
+.contact {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+}
+
+.contact__intro {
+  font-size: 1.125em;
+}
+
+.contact__list {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  padding: 1rem 1.25rem;
+  background-color: #fdeeea;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+
+.contact__label {
+  min-width: 5.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6a3937;
+}
+
+.contact__link {
+  color: #6a3937;
+  overflow-wrap: anywhere;
+}
+.contact__link:hover, .contact__link:focus-visible {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

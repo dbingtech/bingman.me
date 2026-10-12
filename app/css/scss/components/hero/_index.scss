@@ -1,30 +1,113 @@
+@use "../globals/variables" as v;
 @use "../globals/breakpoints" as bp;
 
-.hero__image {
-  display: block;
-  box-sizing: border-box;
-  width: 100vw;
-  height: auto;
-  margin-inline: calc(50% - 50vw);
-  padding: 24px;
-}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 48px;
+  padding-block: 48px;
 
-@media (max-width: 575px) {
-  .hero__image {
-    padding: 16px;
+  @include bp.breakpoint(tablet) {
+    padding-block: 72px 64px;
   }
 }
 
-@include bp.breakpoint(desktop) {
-  .hero__image {
-    width: 50%;
-    margin-inline: auto;
-    padding: 0;
+.hero__intro {
+  flex: 1 1 520px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero__availability {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background-color: v.$color-success-bg;
+  color: v.$color-success-text;
+  font-family: v.$font-mono;
+  font-size: 13px;
+}
+
+.hero__availability-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: v.$color-success-dot;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+  @include bp.breakpoint(tablet) {
+    font-size: 52px;
   }
 }
 
-.hero__title,
 .hero__summary {
-  max-width: 1336px;
-  margin-inline: auto;
+  max-width: 600px;
+  margin: 0;
+  font-size: 20px;
+  color: v.$color-muted;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.hero__facts {
+  flex: 1 1 340px;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid v.$color-line;
+  border-radius: 10px;
+  background-color: v.$color-surface;
+}
+
+.hero__facts-title {
+  margin: 0 0 12px;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.facts__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  padding-block: 12px;
+  border-bottom: 1px solid v.$color-line-soft;
+  font-size: 15px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  dt {
+    flex: 0 0 120px;
+    color: v.$color-muted;
+  }
+
+  dd {
+    flex: 1 1 160px;
+    margin: 0;
+    font-weight: 500;
+  }
 }

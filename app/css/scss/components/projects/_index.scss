@@ -1,74 +1,122 @@
 @use "../globals/variables" as v;
-@use "../globals/breakpoints" as bp;
 
-.projects {
-  max-width: 1336px;
-  margin-inline: auto;
+.work {
+  background-color: v.$color-surface;
+  border-block: 1px solid v.$color-line;
 }
 
-.projects__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 1.5rem;
-}
-
-.project-card {
-  min-width: 0;
-  width: 100%;
-  max-width: 290px;
+.work__inner {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-  border: 1px solid v.$color-border;
-  border-radius: 12px;
-  overflow: hidden;
-
-  &:hover {
-    border-color: v.$color-border-hover;
-  }
+  gap: 32px;
+  padding-block: 72px;
 }
 
-.project-card__title {
+.work__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.work__title {
   margin: 0;
-  font-size: 1.125rem;
-  line-height: 1.25;
-
-  a {
-    color: v.$color-primary;
-    text-decoration: none;
-
-    &:hover,
-    &:focus-visible {
-      text-decoration: underline;
-    }
-  }
+  font-size: 34px;
+  letter-spacing: -0.01em;
 }
 
-.project-card__square {
-  display: block;
+.work__count {
+  font-family: v.$font-mono;
+  font-size: 13px;
+  color: v.$color-muted;
+}
+
+.work__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.work__text {
+  margin: 0;
+  color: v.$color-muted;
+}
+
+// Logos sit on a white panel so both JPG and PNG logos look consistent.
+%work-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  aspect-ratio: 1 / 1;
   padding: 24px;
-  overflow: hidden;
+  border: 1px solid v.$color-line;
+  border-radius: 6px;
   background-color: v.$color-surface;
-}
 
-.project-card__status {
-  margin: 0;
-  font-size: 0.8rem;
-}
-
-.project-card__logo {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-@include bp.breakpoint(small) {
-  .projects__grid {
-    grid-template-columns: repeat(3, 1fr);
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
+}
+
+.work-feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 24px;
+  border: 1px solid v.$color-line;
+  border-radius: 10px;
+  background-color: v.$color-page;
+}
+
+.work-feature__media {
+  @extend %work-media;
+  flex: 1 1 440px;
+  min-width: 0;
+  height: 300px;
+}
+
+.work-feature__body {
+  flex: 1 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.work-feature__title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.work__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.work-card {
+  flex: 1 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid v.$color-line;
+  border-radius: 10px;
+}
+
+.work-card__media {
+  @extend %work-media;
+  height: 200px;
+}
+
+.work-card__title {
+  margin: 0;
+  font-size: 24px;
 }

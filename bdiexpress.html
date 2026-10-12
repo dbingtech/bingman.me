@@ -6,48 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=ba86c36a">
-    <script src="app/js/script.js?v=44a435b4" defer=""></script>
-    <title>BDIExpress &mdash; Dan Bingman</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=427d1839">
+    <script src="app/js/script.js?v=89f662ce" defer=""></script>
+    <title>BDIExpress Case Study &mdash; Dan Bingman</title>
 </head>
-<body>
+<body class="home">
     <header class="site-header">
     <div class="site-header__inner">
-        <h1 class="site-header__title"><a href="index.html">Dan Bingman</a></h1>
-        <div class="site-header__actions">
-            <button type="button" class="site-header__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-header-menu">
-                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
-            </button>
-            <nav class="site-header__nav" aria-label="Menu">
-                <ul class="site-header__menu" id="site-header-menu">
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="index.html#webdev">Web Developer</a></li>
-                    <li><a href="index.html#resume">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a class="site-header__brand" href="index.html">
+            <span class="site-header__name">Dan<span class="site-header__dot">.</span></span>
+            <span class="site-header__role">UX Designer</span>
+        </a>
+        <a class="site-header__back" href="index.html#work">&larr; All work</a>
     </div>
 </header>
 
-    <main>
-        <section class="project-detail">
-            <h1 class="project-detail__title">BDIExpress</h1>
-            <p class="project-detail__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h2 class="project-detail__subheading">Challenge</h2>
-            <blockquote class="project-detail__quote">
-                <p>&ldquo;It feels messy and cramped together. Perhaps amateurish or cartoonish&hellip;&rdquo;</p>
-                <footer>&mdash; BDI CEO, on the current state of BDIExpress.com</footer>
-            </blockquote>
-            <p class="project-detail__text">As the primary stakeholder for this initiative, the CEO&rsquo;s feedback set the direction for the redesign and shaped the success criteria the team was designing against. The mandate: modernize the interface and introduce AI-powered search.</p>
-            <p class="project-detail__text">Beyond the visual refresh, the homepage needed to accomplish three things: communicate BDI&rsquo;s value proposition and identity, give users a clear next step (partner with BDI or browse the catalog), and highlight what makes BDI different &mdash; from knowledge base content and product substitution to customer service and easy ways to get in touch.</p>
-            <h2 class="project-detail__subheading">Solution</h2>
-        </section>
-    </main>
+    <main class="case">
+      <div class="container">
+        <header class="case__intro">
+            <p class="case__eyebrow">Case study &middot; BDIExpress</p>
+            <h1 class="case__title">[Outcome-first headline &mdash; e.g. &ldquo;Making it faster to find and reorder the right part&rdquo;]</h1>
+        </header>
 
-    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l-7 7h4v9h6v-9h4z"></path></svg>
-</button>
+        <dl class="case-meta">
+            <div class="case-meta__item">
+                <dt>Role</dt>
+                <dd>UX/UI Designer</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Company</dt>
+                <dd>BDI</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Platform</dt>
+                <dd>SAP Commerce Cloud (Spartacus)</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Timeline</dt>
+                <dd>October 2024</dd>
+            </div>
+        </dl>
+
+        <section class="case-summary" aria-label="Summary">
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">The problem</h2>
+                <p>[One or two sentences: what was hard for users, and why it mattered to the business.]</p>
+            </div>
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">What I did</h2>
+                <p>[The two or three moves that mattered most.]</p>
+            </div>
+            <div class="case-summary__item case-summary__item--result">
+                <h2 class="case-summary__label">The result</h2>
+                <p>[The change you can point to &mdash; a number if you have one, an observed behavior if not.]</p>
+            </div>
+        </section>
+
+        <div class="case__layout">
+            <nav class="case-toc" aria-label="On this page">
+                <p class="case-toc__title">On this page</p>
+                <ul class="case-toc__list">
+                    <li><a href="#context">Context</a></li>
+                    <li><a href="#learned">What I learned</a></li>
+                    <li><a href="#decisions">Key decisions</a></li>
+                    <li><a href="#outcome">Outcome</a></li>
+                    <li><a href="#next">What I&rsquo;d do next</a></li>
+                </ul>
+            </nav>
+
+            <div class="case__body">
+                <section id="context" class="case-section">
+                    <h2 class="case-section__title">Context</h2>
+                    <blockquote class="case-quote">
+                        <p>&ldquo;It feels messy and cramped together. Perhaps amateurish or cartoonish&hellip;&rdquo;</p>
+                        <footer>&mdash; BDI CEO, on the current state of BDIExpress.com</footer>
+                    </blockquote>
+                    <p>As the primary stakeholder for this initiative, the CEO&rsquo;s feedback set the direction for the redesign and shaped the success criteria the team was designing against. The mandate: modernize the interface and introduce AI-powered search.</p>
+                    <p>Beyond the visual refresh, the homepage needed to accomplish three things: communicate BDI&rsquo;s value proposition and identity, give users a clear next step (partner with BDI or browse the catalog), and highlight what makes BDI different &mdash; from knowledge base content and product substitution to customer service and easy ways to get in touch.</p>
+                    <p>[Constraints: platform, team, timeline, what you could and couldn&rsquo;t change.]</p>
+                </section>
+
+                <section id="learned" class="case-section">
+                    <h2 class="case-section__title">What I learned</h2>
+                    <p>[How you found out what was wrong: analytics, support tickets, sales-rep conversations, usability sessions.]</p>
+                    <ol class="case-findings">
+                        <li><span class="case-findings__number">01</span>[Finding &mdash; stated as what users did, not what they said.]</li>
+                        <li><span class="case-findings__number">02</span>[Finding]</li>
+                        <li><span class="case-findings__number">03</span>[Finding]</li>
+                    </ol>
+                </section>
+
+                <section id="decisions" class="case-section">
+                    <h2 class="case-section__title">Key decisions</h2>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">[Decision 1 &mdash; e.g. &ldquo;Reworking search results for part-number lookups&rdquo;]</h3>
+                        <div class="case-compare">
+                            <figure class="case-compare__item">
+                                <div class="case-placeholder" role="img" aria-label="Before screenshot placeholder">[Before]</div>
+                                <figcaption>Before: [what was wrong]</figcaption>
+                            </figure>
+                            <figure class="case-compare__item">
+                                <div class="case-placeholder" role="img" aria-label="After screenshot placeholder">[After]</div>
+                                <figcaption>After: [what changed]</figcaption>
+                            </figure>
+                        </div>
+                        <div class="case-options">
+                            <p class="case-options__title">Options I weighed</p>
+                            <ul>
+                                <li>[Option A &mdash; why not]</li>
+                                <li>[Option B &mdash; why not]</li>
+                                <li class="case-options__chosen">[Option C &mdash; chosen, and the evidence behind it]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">[Decision 2]</h3>
+                        <p>[Repeat the before / after / options pattern. Two or three decisions is plenty.]</p>
+                    </div>
+                </section>
+
+                <section id="outcome" class="case-section">
+                    <h2 class="case-section__title">Outcome</h2>
+                    <ul class="case-metrics">
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                    </ul>
+                    <p>[No hard numbers? Describe observed changes &mdash; fewer support calls about X, sales reps using it in demos, etc.]</p>
+                </section>
+
+                <section id="next" class="case-section">
+                    <h2 class="case-section__title">What I&rsquo;d do next</h2>
+                    <p>[One honest paragraph: what you&rsquo;d test, change, or measure with more time. Reviewers read this as judgment.]</p>
+                </section>
+
+                <nav class="case-pager" aria-label="Case studies">
+                    <a class="case-pager__back" href="index.html#work">&larr; All work</a>
+                    <a class="case-pager__next" href="house-of-mews-rescue.html">Next: House of Mews &rarr;</a>
+                </nav>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer site-footer--simple">
+    <div class="container site-footer__meta">
+        <span>&copy; 2026 Dan Bingman</span>
+        <!-- TODO: replace with Dan's real contact address -->
+        <a href="mailto:you@example.com">you@example.com</a>
+    </div>
+</footer>
 
 </body>
 </html>

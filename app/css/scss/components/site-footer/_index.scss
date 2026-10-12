@@ -1,0 +1,75 @@
+@use "../globals/variables" as v;
+
+.site-footer {
+  background-color: v.$color-ink;
+  color: v.$color-footer-text;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-block: 72px 40px;
+}
+
+.site-footer__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.site-footer__copy {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.site-footer__title {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: v.$color-surface;
+}
+
+.site-footer__text {
+  margin: 0;
+  color: v.$color-footer-muted;
+}
+
+.site-footer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-footer--simple {
+  .site-footer__meta {
+    padding-block: 32px;
+    border-top: none;
+  }
+
+  .home & a {
+    color: v.$color-footer-text;
+
+    &:hover {
+      color: v.$color-surface;
+    }
+  }
+}
+
+.site-footer__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid v.$color-footer-line;
+  font-family: v.$font-mono;
+  font-size: 13px;
+  color: v.$color-footer-muted;
+}
