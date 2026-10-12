@@ -1,5 +1,30 @@
+@use "../globals/breakpoints" as bp;
+
 .hero__image {
   display: block;
-  width: 100%;
+  box-sizing: border-box;
+  width: 100vw;
   height: auto;
+  margin-inline: calc(50% - 50vw);
+  padding: 24px;
+}
+
+@media (max-width: 575px) {
+  .hero__image {
+    padding: 16px;
+  }
+}
+
+@include bp.breakpoint(desktop) {
+  .hero__image {
+    width: 50%;
+    margin-inline: auto;
+    padding: 0;
+  }
+}
+
+.hero__title,
+.hero__summary {
+  max-width: 1336px;
+  margin-inline: auto;
 }
