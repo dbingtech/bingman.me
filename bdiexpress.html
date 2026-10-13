@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=427d1839">
+    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=01cc15ad">
     <script src="app/js/script.js?v=89f662ce" defer=""></script>
     <title>BDIExpress Case Study &mdash; Dan Bingman</title>
 </head>
@@ -26,7 +26,7 @@
       <div class="container">
         <header class="case__intro">
             <p class="case__eyebrow">Case study &middot; BDIExpress</p>
-            <h1 class="case__title">[Outcome-first headline &mdash; e.g. &ldquo;Making it faster to find and reorder the right part&rdquo;]</h1>
+            <h1 class="case__title">Rebuilding BDIExpress for a fresh look and mobile buyers</h1>
         </header>
 
         <dl class="case-meta">
@@ -44,22 +44,22 @@
             </div>
             <div class="case-meta__item">
                 <dt>Timeline</dt>
-                <dd>October 2024</dd>
+                <dd>October 2024 &ndash; Present</dd>
             </div>
         </dl>
 
         <section class="case-summary" aria-label="Summary">
             <div class="case-summary__item">
                 <h2 class="case-summary__label">The problem</h2>
-                <p>[One or two sentences: what was hard for users, and why it mattered to the business.]</p>
+                <p>A platform upgrade left BDIExpress with a generic out-of-the-box interface and a brand-new mobile site that had never been designed. Buyers were getting a default experience on every screen, and the layout wasn&rsquo;t ready for the AI search we planned to launch.</p>
             </div>
             <div class="case-summary__item">
                 <h2 class="case-summary__label">What I did</h2>
-                <p>[The two or three moves that mattered most.]</p>
+                <p>I built a design system from scratch, untangled brand colors from warning and success states, and moved our design work into Figma, where the CEO and developers could review, comment, and see annotated details in one place.</p>
             </div>
             <div class="case-summary__item case-summary__item--result">
                 <h2 class="case-summary__label">The result</h2>
-                <p>[The change you can point to &mdash; a number if you have one, an observed behavior if not.]</p>
+                <p>Developers used to pick their own spacing, colors, and button styles page by page. Now every new page is built from one shared system, giving the site a consistent look across desktop and mobile.</p>
             </div>
         </section>
 
@@ -84,16 +84,17 @@
                     </blockquote>
                     <p>As the primary stakeholder for this initiative, the CEO&rsquo;s feedback set the direction for the redesign and shaped the success criteria the team was designing against. The mandate: modernize the interface and introduce AI-powered search.</p>
                     <p>Beyond the visual refresh, the homepage needed to accomplish three things: communicate BDI&rsquo;s value proposition and identity, give users a clear next step (partner with BDI or browse the catalog), and highlight what makes BDI different &mdash; from knowledge base content and product substitution to customer service and easy ways to get in touch.</p>
-                    <p>[Constraints: platform, team, timeline, what you could and couldn&rsquo;t change.]</p>
+                    <h3 class="case-section__subtitle">Constraints</h3>
+                    <p>We originally had full creative freedom to redesign around the user, but some ideas ran into the limits of Spartacus and SAP Commerce Cloud. Color-coded headers that showed which site version a user was logged into, useful for troubleshooting, and a navbar with fixed links on the right and rearrangeable links on the left both had to be dropped because of platform and performance limits. I learned to check feasibility with developers earlier in the process.</p>
                 </section>
 
                 <section id="learned" class="case-section">
                     <h2 class="case-section__title">What I learned</h2>
-                    <p>[How you found out what was wrong: analytics, support tickets, sales-rep conversations, usability sessions.]</p>
+                    <p>I didn&rsquo;t have access to analytics, support tickets, or users for interviews, so I worked from what I could get: the CEO&rsquo;s detailed notes on the current site, a competitive audit of Grainger, Fastenal, Motion, and Applied, and an audit of our own pages. I used AI tools to speed up research and organize what I found.</p>
                     <ol class="case-findings">
-                        <li><span class="case-findings__number">01</span>[Finding &mdash; stated as what users did, not what they said.]</li>
-                        <li><span class="case-findings__number">02</span>[Finding]</li>
-                        <li><span class="case-findings__number">03</span>[Finding]</li>
+                        <li><span class="case-findings__number">01</span>Our brand colors were the same as our warning and success colors, so a branded button and an error message could look identical.</li>
+                        <li><span class="case-findings__number">02</span>Without an up-to-date style guide, developers set their own spacing, font sizes, colors, and button styles, so pages that should have matched didn&rsquo;t.</li>
+                        <li><span class="case-findings__number">03</span>Few competitors offered a robust Quick Order, and some buried it several pages deep, even though B2B buyers often arrive knowing exactly which part numbers they need.</li>
                     </ol>
                 </section>
 
@@ -101,7 +102,8 @@
                     <h2 class="case-section__title">Key decisions</h2>
 
                     <div class="case-decision">
-                        <h3 class="case-decision__title">[Decision 1 &mdash; e.g. &ldquo;Reworking search results for part-number lookups&rdquo;]</h3>
+                        <h3 class="case-decision__title">Keeping Quick Order one click away in the header</h3>
+                        <p>Competitors often hid Quick Order several pages deep. Ours was already easy to find, and internal discussions told us customers rely on it heavily, so the redesign kept it as a prominent button in the header on every page.</p>
                         <div class="case-compare">
                             <figure class="case-compare__item">
                                 <div class="case-placeholder" role="img" aria-label="Before screenshot placeholder">[Before]</div>
@@ -154,8 +156,7 @@
     <footer class="site-footer site-footer--simple">
     <div class="container site-footer__meta">
         <span>&copy; 2026 Dan Bingman</span>
-        <!-- TODO: replace with Dan's real contact address -->
-        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="mailto:danbingman@gmail.com?subject=Portfolio%20inquiry">danbingman@gmail.com</a>
     </div>
 </footer>
 

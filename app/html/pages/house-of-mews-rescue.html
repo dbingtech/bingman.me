@@ -8,20 +8,128 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="dist/styles.css" />
     <script src="app/js/script.js" defer></script>
-    <title>House of Mews Rescue &mdash; Dan Bingman</title>
+    <title>House of Mews Rescue Case Study &mdash; Dan Bingman</title>
 </head>
-<body>
-    <include src="partials/header.html"></include>
-    <main>
-        <section class="project-detail">
-            <h1 class="project-detail__title">House of Mews Rescue</h1>
-            <p class="project-detail__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h2 class="project-detail__subheading">Challenge</h2>
-            <h2 class="project-detail__subheading">Solution</h2>
-            <iframe class="project-detail__embed" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="600" src="https://embed.figma.com/design/fOuVNjuq23NPfkxm8m5vsr/HOM-Wireframes?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-        </section>
-    </main>
+<body class="home">
+    <include src="partials/header-case.html"></include>
+    <main class="case">
+      <div class="container">
+        <header class="case__intro">
+            <p class="case__eyebrow">Case study &middot; House of Mews Rescue</p>
+            <h1 class="case__title">Giving a cat rescue a website its own staff can keep up to date</h1>
+        </header>
 
-    <include src="partials/back-to-top.html"></include>
+        <dl class="case-meta">
+            <div class="case-meta__item">
+                <dt>Role</dt>
+                <dd>UX/UI Designer &amp; Developer</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Client</dt>
+                <dd>House of Mews Rescue (nonprofit)</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Tools</dt>
+                <dd>Figma, WordPress, Elementor Pro</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Timeline</dt>
+                <dd>4 weeks, Spring 2026</dd>
+            </div>
+        </dl>
+
+        <section class="case-summary" aria-label="Summary">
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">The problem</h2>
+                <p>The rescue&rsquo;s site was static and outdated, so adoptable pets, events, and &ldquo;Happy Tails&rdquo; success stories couldn&rsquo;t be updated without touching code.</p>
+            </div>
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">What I did</h2>
+                <p>I wireframed a new structure with dedicated, easily scannable layouts for pets, events, and Happy Tails stories, then built it as a dynamically managed site the staff can update themselves.</p>
+            </div>
+            <div class="case-summary__item case-summary__item--result">
+                <h2 class="case-summary__label">The result</h2>
+                <p>[The change you can point to &mdash; a number if you have one, an observed behavior if not.]</p>
+            </div>
+        </section>
+
+        <div class="case__layout">
+            <nav class="case-toc" aria-label="On this page">
+                <p class="case-toc__title">On this page</p>
+                <ul class="case-toc__list">
+                    <li><a href="#context">Context</a></li>
+                    <li><a href="#learned">What I learned</a></li>
+                    <li><a href="#decisions">Key decisions</a></li>
+                    <li><a href="#outcome">Outcome</a></li>
+                    <li><a href="#next">What I&rsquo;d do next</a></li>
+                </ul>
+            </nav>
+
+            <div class="case__body">
+                <section id="context" class="case-section">
+                    <h2 class="case-section__title">Context</h2>
+                    <p>House of Mews Rescue is a Northeast Ohio nonprofit providing fostering, adoption, and long-term medical care for stray cats and kittens.</p>
+                    <p>This was a full website redesign, moving the rescue from a static, outdated site to a modern, dynamically managed one &mdash; giving staff the ability to update adoptable pets, events, and Happy Tails success stories themselves, without touching code.</p>
+                    <h3 class="case-section__subtitle">Constraints</h3>
+                    <p>[Constraints: budget, who maintains the site, timeline, what you could and couldn&rsquo;t change.]</p>
+                </section>
+
+                <section id="learned" class="case-section">
+                    <h2 class="case-section__title">What I learned</h2>
+                    <p>[How you found out what was wrong: conversations with staff and volunteers, a review of the old site, comparable rescue sites.]</p>
+                    <ol class="case-findings">
+                        <li><span class="case-findings__number">01</span>[Finding &mdash; stated as what users did, not what they said.]</li>
+                        <li><span class="case-findings__number">02</span>[Finding]</li>
+                        <li><span class="case-findings__number">03</span>[Finding]</li>
+                    </ol>
+                </section>
+
+                <section id="decisions" class="case-section">
+                    <h2 class="case-section__title">Key decisions</h2>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">Dedicated layouts for pets, events, and Happy Tails</h3>
+                        <p>I began with a set of wireframes establishing the new site&rsquo;s structure &mdash; dedicated, easily scannable layouts for adoptable pets, events, and Happy Tails stories, built so the team could update each of these areas themselves going forward. The wireframes below show that structure taking shape.</p>
+                        <iframe class="case-embed" src="https://embed.figma.com/design/fOuVNjuq23NPfkxm8m5vsr/HOM-Wireframes?node-id=0-1&embed-host=share" title="House of Mews Rescue wireframes in Figma" allowfullscreen></iframe>
+                        <div class="case-options">
+                            <p class="case-options__title">Options I weighed</p>
+                            <ul>
+                                <li>[Option A &mdash; why not]</li>
+                                <li>[Option B &mdash; why not]</li>
+                                <li class="case-options__chosen">[Option C &mdash; chosen, and the evidence behind it]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">[Decision 2]</h3>
+                        <p>[Repeat the before / after / options pattern. Two or three decisions is plenty.]</p>
+                    </div>
+                </section>
+
+                <section id="outcome" class="case-section">
+                    <h2 class="case-section__title">Outcome</h2>
+                    <ul class="case-metrics">
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                    </ul>
+                    <p>[No hard numbers? Describe observed changes &mdash; e.g. how often staff now update the site, adoption inquiries, volunteer sign-ups.]</p>
+                </section>
+
+                <section id="next" class="case-section">
+                    <h2 class="case-section__title">What I&rsquo;d do next</h2>
+                    <p>[One honest paragraph: what you&rsquo;d test, change, or measure with more time. Reviewers read this as judgment.]</p>
+                </section>
+
+                <nav class="case-pager" aria-label="Case studies">
+                    <a class="case-pager__back" href="index.html#work">&larr; All work</a>
+                    <a class="case-pager__next" href="r-e-tours.html">Next: R&amp;E Tours &rarr;</a>
+                </nav>
+            </div>
+        </div>
+      </div>
+    </main>
+    <include src="partials/footer-simple.html"></include>
 </body>
 </html>

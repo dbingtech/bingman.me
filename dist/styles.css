@@ -1014,6 +1014,12 @@ main {
   color: #0e1726;
 }
 
+.case-section__subtitle {
+  margin: 8px 0 0;
+  font-size: 20px;
+  color: #0e1726;
+}
+
 .case-quote {
   margin: 0;
   padding: 4px 0 4px 20px;
@@ -1081,6 +1087,15 @@ main {
   margin-top: 8px;
   font-size: 14px;
   color: #4a5568;
+}
+
+.case-embed {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border: 1px solid #d8e0ea;
+  border-radius: 6px;
+  background-color: #ffffff;
 }
 
 .case-placeholder {

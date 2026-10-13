@@ -8,20 +8,133 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="dist/styles.css" />
     <script src="app/js/script.js" defer></script>
-    <title>R&amp;E Tours &mdash; Dan Bingman</title>
+    <title>R&amp;E Tours Case Study &mdash; Dan Bingman</title>
 </head>
-<body>
-    <include src="partials/header.html"></include>
-    <main>
-        <section class="project-detail">
-            <h1 class="project-detail__title">R&amp;E Tours</h1>
-            <p class="project-detail__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h2 class="project-detail__subheading">Challenge</h2>
-            <h2 class="project-detail__subheading">Solution</h2>
-            <iframe class="project-detail__embed" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="600" src="https://embed.figma.com/design/9g6RgZVHl0worxMN84WMAJ/R%26E-Wireframe?embed-host=share" allowfullscreen></iframe>
-        </section>
-    </main>
+<body class="home">
+    <include src="partials/header-case.html"></include>
+    <main class="case">
+      <div class="container">
+        <header class="case__intro">
+            <p class="case__eyebrow">Case study &middot; R&amp;E Tours</p>
+            <h1 class="case__title">Rebuilding R&amp;E Tours from scratch so nobody could tell it moved</h1>
+        </header>
 
-    <include src="partials/back-to-top.html"></include>
+        <dl class="case-meta">
+            <div class="case-meta__item">
+                <dt>Role</dt>
+                <dd>UX/UI Designer &amp; Developer</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Client</dt>
+                <dd>R&amp;E Tours</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Platform</dt>
+                <dd>[Platform]</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Timeline</dt>
+                <dd>[Timeline]</dd>
+            </div>
+        </dl>
+
+        <section class="case-summary" aria-label="Summary">
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">The problem</h2>
+                <p>R&amp;E Tours ran on a proprietary website builder that couldn&rsquo;t be moved to another host, and its domains, hosting, and email were spread across seven different providers.</p>
+            </div>
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">What I did</h2>
+                <p>I rebuilt every component of the old site by hand so it looked identical, then switched the domain over from a staging server in one planned cutover.</p>
+            </div>
+            <div class="case-summary__item case-summary__item--result">
+                <h2 class="case-summary__label">The result</h2>
+                <p>[The change you can point to &mdash; a number if you have one, an observed behavior if not.]</p>
+            </div>
+        </section>
+
+        <div class="case__layout">
+            <nav class="case-toc" aria-label="On this page">
+                <p class="case-toc__title">On this page</p>
+                <ul class="case-toc__list">
+                    <li><a href="#context">Context</a></li>
+                    <li><a href="#learned">What I learned</a></li>
+                    <li><a href="#decisions">Key decisions</a></li>
+                    <li><a href="#outcome">Outcome</a></li>
+                    <li><a href="#next">What I&rsquo;d do next</a></li>
+                </ul>
+            </nav>
+
+            <div class="case__body">
+                <section id="context" class="case-section">
+                    <h2 class="case-section__title">Context</h2>
+                    <p>R&amp;E Tours is owned and operated by Rick Klimek. Rick initially needed IT support for his business, which eventually expanded to hosting, domain management, and website design.</p>
+                    <p>Rick wanted the digital side of his business consolidated. There were three domain registrars, two hosting companies, and two email providers, with fees that kept increasing year after year. This meant rebuilding his primary website, r-etours.com.</p>
+                    <h3 class="case-section__subtitle">Constraints</h3>
+                    <p>The old site ran on a proprietary website builder that couldn&rsquo;t be moved to another host, so it had to be rebuilt from scratch. Rick also had a firm requirement: the new site had to look identical to the old one.</p>
+                </section>
+
+                <section id="learned" class="case-section">
+                    <h2 class="case-section__title">What I learned</h2>
+                    <p>[How you found out what was needed: conversations with Rick, an audit of the old site, feedback from teachers and advisors.]</p>
+                    <ol class="case-findings">
+                        <li><span class="case-findings__number">01</span>[Finding &mdash; stated as what users did, not what they said.]</li>
+                        <li><span class="case-findings__number">02</span>[Finding]</li>
+                        <li><span class="case-findings__number">03</span>[Finding]</li>
+                    </ol>
+                </section>
+
+                <section id="decisions" class="case-section">
+                    <h2 class="case-section__title">Key decisions</h2>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">Rebuilding the builder&rsquo;s components</h3>
+                        <p>The old site was made from the platform&rsquo;s pre-built pieces, like the theme, stylized components like banners, the photo gallery, contact forms, and navigation. I had to rebuild each one from scratch so it looked and behaved the same, with no access to the original code.</p>
+                        <iframe class="case-embed" src="https://embed.figma.com/design/9g6RgZVHl0worxMN84WMAJ/R%26E-Wireframe?embed-host=share" title="R&amp;E Tours wireframes in Figma" allowfullscreen></iframe>
+                        <div class="case-options">
+                            <p class="case-options__title">Options I weighed</p>
+                            <ul>
+                                <li>[Option A &mdash; why not]</li>
+                                <li>[Option B &mdash; why not]</li>
+                                <li class="case-options__chosen">[Option C &mdash; chosen, and the evidence behind it]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">Switching over with little to no downtime</h3>
+                        <p>Rick needed to minimize disruption for teachers and advisors, so I built and tested the new site on a staging server and switched the domain over in one planned cutover.</p>
+                    </div>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">Adding what the old site couldn&rsquo;t do</h3>
+                        <p>Rick wanted to accept online payments for trip deposits and a way to update tour dates and prices himself without calling me. These had to fit the existing look so nobody could tell they were new.</p>
+                    </div>
+                </section>
+
+                <section id="outcome" class="case-section">
+                    <h2 class="case-section__title">Outcome</h2>
+                    <ul class="case-metrics">
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                        <li class="case-metric"><span class="case-metric__value">[Metric]</span><span class="case-metric__label">[What it measures]</span></li>
+                    </ul>
+                    <p>[No hard numbers? Describe observed changes &mdash; e.g. providers consolidated, yearly fees saved, downtime during the switch, how often Rick updates tours himself.]</p>
+                </section>
+
+                <section id="next" class="case-section">
+                    <h2 class="case-section__title">What I&rsquo;d do next</h2>
+                    <p>[One honest paragraph: what you&rsquo;d test, change, or measure with more time. Reviewers read this as judgment.]</p>
+                </section>
+
+                <nav class="case-pager" aria-label="Case studies">
+                    <a class="case-pager__back" href="index.html#work">&larr; All work</a>
+                    <a class="case-pager__next" href="bdiexpress.html">Next: BDIExpress &rarr;</a>
+                </nav>
+            </div>
+        </div>
+      </div>
+    </main>
+    <include src="partials/footer-simple.html"></include>
 </body>
 </html>
