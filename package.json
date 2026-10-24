@@ -30,5 +30,8 @@
     "posthtml": "^0.16.7",
     "posthtml-include": "^2.0.1",
     "sass": "^1.101.7"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
   }
 }
