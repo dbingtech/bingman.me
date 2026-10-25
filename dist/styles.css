@@ -1096,6 +1096,58 @@ main {
   color: #4a5568;
 }
 
+.case-zoom {
+  position: relative;
+  display: block;
+  cursor: zoom-in;
+}
+
+.case-zoom__hint {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #0e1726;
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.case-lightbox {
+  max-width: 95vw;
+  max-height: 95vh;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-out;
+}
+.case-lightbox::backdrop {
+  background-color: rgba(14, 23, 38, 0.85);
+}
+.case-lightbox img {
+  display: block;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+}
+
+.case-lightbox__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #0e1726;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .case-embed {
   display: block;
   width: 100%;

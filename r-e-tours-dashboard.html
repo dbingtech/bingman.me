@@ -1,0 +1,152 @@
+<!-- Auto-generated from app/html/pages — edit the source there, not this file. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=1113cd82">
+    <script src="app/js/script.js?v=95543f1d" defer=""></script>
+    <title>R&amp;E Tours Dashboard Case Study &mdash; Dan Bingman</title>
+</head>
+<body class="home">
+    <header class="site-header">
+    <div class="site-header__inner">
+        <a class="site-header__brand" href="index.html">
+            <span class="site-header__name">Dan<span class="site-header__dot">.</span></span>
+            <span class="site-header__role">UX Designer</span>
+        </a>
+        <a class="site-header__back" href="index.html#work">&larr; All work</a>
+    </div>
+</header>
+
+    <main class="case">
+      <div class="container">
+        <header class="case__intro">
+            <p class="case__eyebrow">Case study &middot; R&amp;E Tours &middot; In progress</p>
+            <h1 class="case__title">Designing a dashboard for R&amp;E Tours&rsquo; tour records</h1>
+        </header>
+
+        <dl class="case-meta">
+            <div class="case-meta__item">
+                <dt>Role</dt>
+                <dd>UX/UI Designer</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Client</dt>
+                <dd>R&amp;E Tours</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Platform</dt>
+                <dd>Google Apps Script &middot; Google Drive</dd>
+            </div>
+            <div class="case-meta__item">
+                <dt>Timeline</dt>
+                <dd>In progress</dd>
+            </div>
+        </dl>
+
+        <section class="case-summary" aria-label="Summary">
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">The problem</h2>
+                <p>Tour records live in multiple spreadsheets spread across multiple folders in Google Drive. [What that costs &mdash; time spent hunting, records that don&rsquo;t match, things that slip.]</p>
+            </div>
+            <div class="case-summary__item">
+                <h2 class="case-summary__label">What I&rsquo;m doing</h2>
+                <p>I&rsquo;m designing and building a dashboard that brings those records together in one place. It runs on Google Apps Script, so it lives in Google Drive right alongside the files Rick already uses. [What it lets Rick see or do at a glance.]</p>
+            </div>
+            <div class="case-summary__item case-summary__item--result">
+                <h2 class="case-summary__label">Where it stands</h2>
+                <p>The dashboard is in the design phase. [What&rsquo;s next &mdash; e.g. a prototype for Rick to test, then development.]</p>
+            </div>
+        </section>
+
+        <div class="case__layout">
+            <nav class="case-toc" aria-label="On this page">
+                <p class="case-toc__title">On this page</p>
+                <ul class="case-toc__list">
+                    <li><a href="#context">Context</a></li>
+                    <li><a href="#learned">What I learned</a></li>
+                    <li><a href="#decisions">Key decisions</a></li>
+                    <li><a href="#next">What&rsquo;s next</a></li>
+                </ul>
+            </nav>
+
+            <div class="case__body">
+                <section id="context" class="case-section">
+                    <h2 class="case-section__title">Context</h2>
+                    <p>R&amp;E Tours is owned and operated by Rick Klimek. After I <a class="text-link" href="r-e-tours.html">rebuilt the R&amp;E Tours website</a>, the next project was a dashboard for the company&rsquo;s tour record keeping.</p>
+                    <p>Today, Rick keeps tour records in multiple spreadsheets across multiple folders in Google Drive. In one spreadsheet, Rick tracks the itinerary and venues, calculates payments for each student, and records the staff he hires, payments made, and more. Each year he copies the previous year&rsquo;s spreadsheet, so the old information carries over instead of starting fresh.</p>
+                    <h3 class="case-section__subtitle">Constraints</h3>
+                    <p>The dashboard has to fit a small business budget, be easy for Rick to maintain without ongoing help, and feel familiar to someone who already works in spreadsheets every day.</p>
+                </section>
+
+                <section id="learned" class="case-section">
+                    <h2 class="case-section__title">What I learned</h2>
+                    <p>With records this complex, I encouraged Rick to work with me one-on-one to customize each screen, so nothing was left out.</p>
+                    <ol class="case-findings">
+                        <li><span class="case-findings__number">01</span>[Finding &mdash; stated as what users did, not what they said.]</li>
+                        <li><span class="case-findings__number">02</span>[Finding]</li>
+                        <li><span class="case-findings__number">03</span>[Finding]</li>
+                    </ol>
+                </section>
+
+                <section id="decisions" class="case-section">
+                    <h2 class="case-section__title">Key decisions</h2>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">Building it with AI, inside Google Drive</h3>
+                        <p>I&rsquo;m the designer, and I&rsquo;m developing the dashboard with AI, which lets me take it from design to a working tool on my own. I chose Google Apps Script so the dashboard lives in Google Drive, right alongside the spreadsheets Rick already uses.</p>
+                        <div class="case-compare">
+                            <figure class="case-compare__item">
+                                <a class="case-zoom" href="app/images/Dashboard_Before%20.png" aria-label="Expand the tour spreadsheet screenshot">
+                                    <img src="app/images/Dashboard_Before%20.png" alt="A dense tour spreadsheet with an itinerary, venue contacts, per-student pricing, and a block of trip costs, all on one sheet">
+                                    <span class="case-zoom__hint" aria-hidden="true">Click to expand</span>
+                                </a>
+                                <figcaption>Before: The first of two pages in a single tour spreadsheet</figcaption>
+                            </figure>
+                            <figure class="case-compare__item">
+                                <div class="case-placeholder" role="img" aria-label="After screenshot placeholder">[After]</div>
+                                <figcaption>After: [the dashboard design]</figcaption>
+                            </figure>
+                        </div>
+                        <div class="case-options">
+                            <p class="case-options__title">Options I weighed</p>
+                            <ul>
+                                <li>[A standalone web app &mdash; why not]</li>
+                                <li>[Hiring a developer &mdash; why not]</li>
+                                <li class="case-options__chosen">[Google Apps Script, built with AI &mdash; chosen, and why]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">[Decision 2]</h3>
+                        <p>[Repeat the before / after / options pattern. Two or three decisions is plenty.]</p>
+                    </div>
+                </section>
+
+                <section id="next" class="case-section">
+                    <h2 class="case-section__title">What&rsquo;s next</h2>
+                    <p>[What&rsquo;s left to design or build, and how you&rsquo;ll know it&rsquo;s working &mdash; time saved, fewer errors, how often staff use it.]</p>
+                </section>
+
+                <nav class="case-pager" aria-label="Case studies">
+                    <a class="case-pager__back" href="index.html#work">&larr; All work</a>
+                    <a class="case-pager__next" href="bdiexpress.html">Next: BDIExpress &rarr;</a>
+                </nav>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer site-footer--simple">
+    <div class="container site-footer__meta">
+        <span>&copy; 2026 Dan Bingman</span>
+        <a href="mailto:danbingman@gmail.com?subject=Portfolio%20inquiry">danbingman@gmail.com</a>
+    </div>
+</footer>
+
+</body>
+</html>
