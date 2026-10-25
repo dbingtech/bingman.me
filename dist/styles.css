@@ -501,10 +501,18 @@ main {
   background-color: #f6f8fb;
 }
 
+.work-feature--reverse {
+  flex-direction: row-reverse;
+}
+
 .work-feature__media {
   flex: 1 1 440px;
   min-width: 0;
   height: 300px;
+}
+
+.work-feature__media--half img {
+  transform: scale(0.5);
 }
 
 .work-feature__body {

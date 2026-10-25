@@ -72,11 +72,21 @@
   background-color: v.$color-page;
 }
 
+// Image on the right; it still stacks on top when the row wraps.
+.work-feature--reverse {
+  flex-direction: row-reverse;
+}
+
 .work-feature__media {
   @extend %work-media;
   flex: 1 1 440px;
   min-width: 0;
   height: 300px;
+}
+
+// Shows the logo at half its rendered size inside the panel.
+.work-feature__media--half img {
+  transform: scale(0.5);
 }
 
 .work-feature__body {

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=1113cd82">
+    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=99802162">
     <script src="app/js/script.js?v=95543f1d" defer=""></script>
     <title>R&amp;E Tours Dashboard Case Study &mdash; Dan Bingman</title>
 </head>
@@ -80,7 +80,7 @@
                     <p>R&amp;E Tours is owned and operated by Rick Klimek. After I <a class="text-link" href="r-e-tours.html">rebuilt the R&amp;E Tours website</a>, the next project was a dashboard for the company&rsquo;s tour record keeping.</p>
                     <p>Today, Rick keeps tour records in multiple spreadsheets across multiple folders in Google Drive. In one spreadsheet, Rick tracks the itinerary and venues, calculates payments for each student, and records the staff he hires, payments made, and more. Each year he copies the previous year&rsquo;s spreadsheet, so the old information carries over instead of starting fresh.</p>
                     <h3 class="case-section__subtitle">Constraints</h3>
-                    <p>The dashboard has to fit a small business budget, be easy for Rick to maintain without ongoing help, and feel familiar to someone who already works in spreadsheets every day.</p>
+                    <p>The dashboard has to fit a small business budget, be easy for Rick to maintain without ongoing help, and feel familiar to someone who already works in spreadsheets every day. Rick also wants it to have color so it looks fun, not like another spreadsheet.</p>
                 </section>
 
                 <section id="learned" class="case-section">
@@ -108,16 +108,19 @@
                                 <figcaption>Before: The first of two pages in a single tour spreadsheet</figcaption>
                             </figure>
                             <figure class="case-compare__item">
-                                <div class="case-placeholder" role="img" aria-label="After screenshot placeholder">[After]</div>
-                                <figcaption>After: [the dashboard design]</figcaption>
+                                <a class="case-zoom" href="app/images/Dashboard_lofi_Wireframe.png" aria-label="Expand the dashboard wireframe">
+                                    <img src="app/images/Dashboard_lofi_Wireframe.png" alt="A low-fidelity dashboard wireframe with a trip header, summary cards for amount due, received, balance, profit, and vendors confirmed, a day-by-day itinerary table with booking status, and side panels for trip details, a school checklist, and vendor notes">
+                                    <span class="case-zoom__hint" aria-hidden="true">Click to expand</span>
+                                </a>
+                                <figcaption>After: Lofi wireframe concept</figcaption>
                             </figure>
                         </div>
                         <div class="case-options">
                             <p class="case-options__title">Options I weighed</p>
                             <ul>
-                                <li>[A standalone web app &mdash; why not]</li>
-                                <li>[Hiring a developer &mdash; why not]</li>
-                                <li class="case-options__chosen">[Google Apps Script, built with AI &mdash; chosen, and why]</li>
+                                <li>Building it into his website &mdash; the site runs on WordPress, so it would have meant either piecing it together from several plugins or hard coding it, which would have taken a lot of time.</li>
+                                <li>A hard-coded web app &mdash; I first considered this a year ago, but every change would have depended on me, and Rick needs something he can maintain without ongoing help.</li>
+                                <li class="case-options__chosen">Google Apps Script &mdash; chosen. I&rsquo;ve built tools with Apps Script for other groups that use Google Workspace, and it keeps the dashboard in Google Drive, right next to Rick&rsquo;s spreadsheets.</li>
                             </ul>
                         </div>
                     </div>
@@ -130,7 +133,7 @@
 
                 <section id="next" class="case-section">
                     <h2 class="case-section__title">What&rsquo;s next</h2>
-                    <p>[What&rsquo;s left to design or build, and how you&rsquo;ll know it&rsquo;s working &mdash; time saved, fewer errors, how often staff use it.]</p>
+                    <p>Next, I&rsquo;ll build a working prototype, refine it through rounds of feedback with Rick, and then build the final dashboard.</p>
                 </section>
 
                 <nav class="case-pager" aria-label="Case studies">
