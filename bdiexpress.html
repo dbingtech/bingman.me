@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=ea2679ca">
+    <link rel="stylesheet" type="text/css" href="dist/styles.css?v=6e844c22">
     <script src="app/js/script.js?v=db6e0413" defer=""></script>
     <title>BDIExpress Case Study &mdash; Dan Bingman</title>
 </head>
@@ -55,7 +55,7 @@
             </div>
             <div class="case-summary__item">
                 <h2 class="case-summary__label">What I did</h2>
-                <p>I built a design system from scratch, untangled brand colors from warning and success states, and moved our design work into Figma, where the CEO and developers could review and collaborate in one place. I also built an interactive prototype so everyone could experience the new design before development began.</p>
+                <p>I built a design system from scratch, added complementary colors so primary and secondary buttons stood out from our navy brand color, and moved our design work into Figma, where the CEO and developers could review and collaborate in one place. I also built an interactive prototype so everyone could experience the new design before development began.</p>
             </div>
             <div class="case-summary__item case-summary__item--result">
                 <h2 class="case-summary__label">The result</h2>
@@ -92,7 +92,7 @@
                     <h2 class="case-section__title">What I learned</h2>
                     <p>I didn&rsquo;t have access to analytics, support tickets, or users for interviews, so I worked from what I could get: the CEO&rsquo;s detailed notes on the current site, a competitive audit of Grainger, Fastenal, Motion, and Applied, and an audit of our own pages. I used AI tools to speed up research and organize what I found.</p>
                     <ol class="case-findings">
-                        <li><span class="case-findings__number">01</span>Our brand colors were the same as our warning and success colors, so a branded button and an error message could look identical.</li>
+                        <li><span class="case-findings__number">01</span>Buttons, headers, and section backgrounds all used the same navy blue, so it was hard to tell a button from the start of a new section. Red, the only color in our logo, wasn&rsquo;t an option for buttons either.</li>
                         <li><span class="case-findings__number">02</span>Without an up-to-date style guide, developers set their own spacing, font sizes, colors, and button styles, so pages that should have matched didn&rsquo;t.</li>
                         <li><span class="case-findings__number">03</span>Few competitors offered a robust Quick Order, and some buried it several pages deep, even though B2B buyers often arrive knowing exactly which part numbers they need.</li>
                     </ol>
@@ -100,6 +100,34 @@
 
                 <section id="decisions" class="case-section">
                     <h2 class="case-section__title">Key decisions</h2>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">Using one size for buttons, quantity fields, and inputs</h3>
+                        <p>Developers had been sizing controls page by page, so a quantity field and its Add to Cart button often didn&rsquo;t line up. I set shared heights for buttons, quantity fields, and input fields so every control feels the same across pages, and buyers recognize them wherever they appear.</p>
+                        <div class="case-compare">
+                            <figure class="case-compare__item">
+                                <img src="app/images/Screenshot%202026-10-25%20102910.png" alt="Checkout screen where section headers, Edit buttons, the Review button, and the Place Order button all use the same navy blue">
+                                <figcaption>Before: Inconsistent use of color</figcaption>
+                            </figure>
+                            <figure class="case-compare__item">
+                                <div class="case-placeholder" role="img" aria-label="After screenshot placeholder">[After]</div>
+                                <figcaption>After: [what changed]</figcaption>
+                            </figure>
+                        </div>
+                        <div class="case-options">
+                            <p class="case-options__title">Options I weighed</p>
+                            <ul>
+                                <li>[Option A &mdash; why not]</li>
+                                <li>[Option B &mdash; why not]</li>
+                                <li class="case-options__chosen">[Option C &mdash; chosen, and the evidence behind it]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-decision">
+                        <h3 class="case-decision__title">[Decision 2]</h3>
+                        <p>[Repeat the before / after / options pattern. Two or three decisions is plenty.]</p>
+                    </div>
 
                     <div class="case-decision">
                         <h3 class="case-decision__title">Keeping Quick Order one click away in the header</h3>
@@ -122,11 +150,6 @@
                                 <li class="case-options__chosen">[Option C &mdash; chosen, and the evidence behind it]</li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div class="case-decision">
-                        <h3 class="case-decision__title">[Decision 2]</h3>
-                        <p>[Repeat the before / after / options pattern. Two or three decisions is plenty.]</p>
                     </div>
                 </section>
 

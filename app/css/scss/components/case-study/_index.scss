@@ -258,6 +258,14 @@
 .case-compare__item {
   margin: 0;
 
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid v.$color-line;
+    border-radius: 6px;
+  }
+
   figcaption {
     margin-top: 8px;
     font-size: 14px;
